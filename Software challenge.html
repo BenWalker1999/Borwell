@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Borwell Software Challenge</title>
+    <script src="Software_challenge.js"></script>
+</head>
+<body>
+
+	<p> Hello and welcome to our room calculator, with this calculator we can output the following: the area of the floor,
+	the volume of the room and finally the amount of paint required to paint the walls.</p>
+
+	<p> Can you provide us with the height and width of the doors or windows in your room, this helps us with working
+	out the amount of paint required to paint the walls.</p>
+
+	<form name = "windowDoorCalculations">
+		<p>Enter the width of your 1st window/door in Metres: <input type="number" id="widthOfWindowDoor"/></p>
+		<p>Enter the height of your 1st window/door in Metres: <input type="number" id="heightOfWindowDoor"/></p>
+		<p>Enter the width of your  2nd window/door in Metres: <input type="number" id="widthOfWindowDoor2"/></p>
+		<p>Enter the height of your 2nd window/door in Metres: <input type="number" id="heightOfWindowDoor2"/></p>
+		<p>Enter the width of your 3rd window/door in Metres: <input type="number" id="widthOfWindowDoor3"/></p>
+		<p>Enter the height of your 3rd window/door in Metres: <input type="number" id="heightOfWindowDoor3"/></p>
+		<p> <button id="addWindowDoor" onclick="sumOfWindowDoorAreas = addWindowAndDoor()">Add Window or Door</button></p>
+	</form>
+
+
+	<p> Please enter the length, width and height of your room (in Metres) in order to perform some calculations </p>
+	<!--Creates a form called calculations-->
+	<form name = "roomCalculations">
+		 <!--Asks the user to enter the dimensions (length,width and height) of the room and creates a text box to type them in-->
+		<p>Enter the length of the room in Metres: <input type="number" id="lengthOfRoom"/></p>
+		<p>Enter the width of the room in Metres: <input type="number" id="widthOfRoom"/></p>
+		<p>Enter the height of the room in Metres: <input type="number" id="heightOfRoom"/></p>
+		<p> <button id="calculationSubmission" onclick="addWindowAndDoor(); Calculations()">Submit</button></p>
+	</form>
+		
+</body>
+
+</html>
