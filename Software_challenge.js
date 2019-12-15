@@ -33,8 +33,8 @@ function Calculations() {
 	var length = document.getElementById("lengthOfRoom").value;
 	var width = document.getElementById("widthOfRoom").value;
 	var height = document.getElementById("heightOfRoom").value;
-	/* This maths sets it so that if the length or width of each wall entered is less than 1 then it says input is not valid, else wise if the values are over 1 then the area of the floor
-	is worked out by multiplying the length by the width */
+	/* This maths sets it so that if the length or width of each wall entered is less than 1 or anything other than a number ,should not be possible as the html form is set to data type number,
+	then it says input is not valid, else wise if the values are over 1 then the area of the floor is worked out by multiplying the length by the width */
 	if (length < 1 || width < 1) {
 		document.write("Input not valid" + "<br>");
 	} else {
